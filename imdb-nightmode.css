@@ -17,18 +17,6 @@ Font-color:		#ccc
 Link-color:		#2f8cb7
 *************************************************************/
 
-/***** remove stuff *******************************************/
-
-  #top_ad_wrapper,
-iframe[id="twitter-widget-0"],
-.ab_twitter,
-.ab_zergnet
-  {
-    display: none;
-  }
-
-
-
 /***** borders ************************************************/
 
   .redesign .article.highlighted
@@ -750,20 +738,5 @@ ul.quicklinks li.subnav_selected a:visited,
     content: "IMDb TV";
     float: left;
     margin: 20px 0 0 20px;
-  }
-}
-
-@-moz-document regexp("(?=.*?api_key=127059960673829).*") {
-/***** Fixes facebook comments on imdb news articles *******************/
-
-
-  .plugin .pluginSkinLight
-  {
-    color: #ccc;
-  }
-
-  .plugin .pluginSkinLight .UFIInputContainer span
-  {
-    color: #000;
   }
 }
