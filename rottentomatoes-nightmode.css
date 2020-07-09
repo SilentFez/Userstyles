@@ -1,12 +1,10 @@
-@-moz-document domain(rottentomatoes.com) {
-
+@-moz-document domain("rottentomatoes.com") {
 /*
 * Author        :  SilentFez
 * URL           :  https://github.com/SilentFez/Userstyles
 * Title         :  rottentomatoes.com - Nightmode
-* Version       :  2.0.2
+* Version       :  2.0.3
 */
-
 /***** colors used *******************************************
 Background 1:		#000000
 Background 2:		#1a1a1a
@@ -16,152 +14,78 @@ Borders:		#323232
 Font-color:		#ccc
 Link-color:		#2f8cb7
 *************************************************************/
-
 /***** borders ************************************************/
-
-/** border #323232 **/ 
-  #scorePanel .tmeterpanel,
-#movies_sidebar,
-#movies_sidebar .nav-tabs,
-#movies_sidebar .nav-tabs > li:not(:first-of-type),
-#miniMOB .rightColumn,
-#count-link,
-#browser-navigator .navigator-menu,
-#footer,  
-#tomatometer-info,
-#main_movie_sidebar_content,
-#rating_widget_desktop .rating_widget_desktop-header,
-#FranchiseList .franchiseItemContainer .franchiseItem,
-input, button, select, textarea,
-blockquote,
-hr,
-table,
-.mb-movies.list-view .mb-movie,
-.btn-secondary-rt,
-.table > thead > tr > th, 
-.table > tbody > tr > th, 
-.table > tfoot > tr > th, 
-.table > thead > tr > td, 
-.table > tbody > tr > td, 
-.table > tfoot > tr > td,
-.nav-tabs > li.active > a, 
-.nav-tabs > li.active > a:hover, 
-.nav-tabs > li.active > a:focus,
-.lineHeader,
-.panel-rt.panel-box,
-.review_quote,
-.navbar-rt,
-.hoverBubble .bubbleContent,
-.pagination > li > a, 
-.pagination > li > span,
-.pagination > .disabled > span, 
-.pagination > .disabled > span:hover, 
-.pagination > .disabled > span:focus, 
-.pagination > .disabled > a, 
-.pagination > .disabled > a:hover, 
-.pagination > .disabled > a:focus,
-.bottom_divider,
-.rating_widget .review,
-.modal-header,
-.btn-default,
-.topbar,
-.post.original,
-.nav-tabs,
-.form-control,  
-.panel-rt,  
-.mb-navigator,
-.tb-navigator,
-.topbar .topbarItem:first-child,
-.topbar > .topbarItem,
-.mb-count-panel, 
-.Tepisodes .epis-nav ul li,
-.Tepisodes .epis-nav,
-.Tepisodes .epis-main,
-.Tepisodes .epis-main .epis-tbox,
-.castSection.borderTop,
-.review_table .review_table_row,
-.franchiseLink,
-.searchResult,
-.score_panel .tmeter-panel,
-.genrelist li,
-.movie_list tr,
-.btn-primary-border-dropdown .dropdown-menu li,
-.countdown-item,
-.userDropdown.dropdown .dropdown-menu.roundMenu .userStats,
-.rating_widget-body .rating_widget-body-btn,
-.mop-ratings-wrap__more-info,
-.mop-ratings-wrap__more-overlay_right
-  {
+/** border #323232 **/
+* {
     border-color: #323232 !important;
-  } 
-            
-/** border #444 **/
-  .post
-  {
-    border-bottom: 1px solid #444 !important;
-  }
+}
 
-  div.panel-rt.bannerCaption.subPanel
-  {
+/** border #444 **/
+.post {
+    border-bottom: 1px solid #444 !important;
+}
+
+div.panel-rt.bannerCaption.subPanel {
     border-left: 5px solid #FA320A !important;
-  }      
-  
+}
+
 /** review quote arrow **/
-  .review_quote:after,
-.review_quote:before
-  {
+.mop-audience-reviews__review-quote::after,
+.review_quote:after,
+.review_quote:before {
     border-color: transparent #323232 transparent transparent !important;
-  }
+}
 
 /***** backgrounds ******************************************/
-
 /** #000 **/
-  body
-  {
+body {
     background-color: #000 !important;
-  }
+}
 
 /** #1a1a1a **/
-  .container,
-.nav > li > a:hover, 
+.container,
+.nav > li > a:hover,
 .nav > li > a:focus,
 .panel,
 .mop-ratings-wrap__more-overlay,
-.mop-ratings-wrap__more-overlay::after
-  {
+.mop-ratings-wrap__more-overlay::after {
     background-color: #1a1a1a !important;
-  }
+}
 
 /** #202020 **/
-  #movies_sidebar,   
-#header, #footer,
-#main, 
-#count-link #view-icon-grp .view-icon,   
-#quotesList .media-body div, 
+#movies_sidebar,
+#header,
+#footer,
+#main,
+#count-link #view-icon-grp .view-icon,
+#quotesList .media-body div,
 #mainColumn,
-#login .modal-dialog .modal-footer, 
-#signup .modal-dialog .modal-footer, 
+#login .modal-dialog .modal-footer,
+#signup .modal-dialog .modal-footer,
 #signup_email .modal-dialog .modal-footer,
 .countdown-index,
-input, button, select, textarea,
-.nav-tabs > li.active > a, 
-.nav-tabs > li.active > a:hover, 
+input,
+button,
+select,
+textarea,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus,
 .panel-rt.panel-box,
 .lineHeader span,
-.pagination > .disabled > span, 
-.pagination > .disabled > span:hover, 
-.pagination > .disabled > span:focus, 
-.pagination > .disabled > a, 
-.pagination > .disabled > a:hover, 
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus,
 .modal-content,
 .topbar,
 .post.original,
-.pagination>li>a:hover, 
-.pagination>li>span:hover, 
-.pagination>li>a:focus, 
-.pagination>li>span:focus,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
 .tt-dropdown-menu,
 .navbar-rt .navbar-searchbox .tt-input.form-control,
 .btn-default,
@@ -175,33 +99,33 @@ input, button, select, textarea,
 .btn-secondary-rt,
 .sleaderboard_wrapper,
 .panel-rt.bannerCaption.subPanel,
-.critic-criteria-container h1.panel-heading, 
+.critic-criteria-container h1.panel-heading,
 h2.panel-heading,
 .home-body #videoPanel,
-.mop-ratings-wrap__title
-  {
+.mop-ratings-wrap__title,
+.tv-season-top-section__ratings-group,
+.score-detail__dialog {
     background-color: #202020 !important;
-  }
-        
+}
+
 /** #202020 bg **/
-  #whatIsTomatometer .title
-  {
+#whatIsTomatometer .title {
     background: #202020;
-  }
+}
 
 /** #282828 **/
-  #scorePanel,
-#movies_sidebar .nav-tabs > li.active, 
+#scorePanel,
+#movies_sidebar .nav-tabs > li.active,
 #movies_sidebar .nav-tabs > li:hover,
 #movies_sidebar .nav-tabs,
 #rating_widget_desktop .rating_widget_desktop-header span,
 #seasonList .seasonItem,
-.pagination > li > a, 
+.pagination > li > a,
 .pagination > li > span,
 .review_quote,
 .hoverBubble .bubbleContent,
 .rating_widget .review,
-.table-striped > tbody > tr:nth-child(odd) > td, 
+.table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th,
 .grey_content_box,
 .comments_quote blockquote,
@@ -210,51 +134,70 @@ h2.panel-heading,
 .ui-widget-content,
 .body .ui-autocomplete,
 .userDropdown.dropdown .dropdown-menu.roundMenu .userStats:hover,
-.dropdown-menu>li>a:focus, 
-.dropdown-menu>li>a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover,
 .FullscreenSearch--desktop .FullscreenSearch__result.FullscreenSearch__result--selected,
 .gray-movie-block,
-.panel-rt.panel .panel-heading, .panel-rt .panel-heading
-  {
+.panel-rt.panel .panel-heading,
+.panel-rt .panel-heading,
+.mop-ratings-wrap__score-detail-container,
+.rate-and-review-widget__container,
+.mop-audience-reviews__no-featured, 
+.mop-audience-reviews__no-reviews,
+.mop-audience-reviews__review-quote {
     background: #282828 !important;
-  }
-        
+}
+
 /** #282828 !important **/
-  .social-tools
-  {
+.social-tools {
     background-color: #282828 !important;
-  }
-          
+}
+
 /** transparent **/
-  .thumbnail,
-.stage
-  {
+.thumbnail,
+.stage {
     background: transparent;
-  }          
+}
 
 /***** font color ******************************************/
-
 /** #ccc **/
-  textarea.rating_textbox-textarea.clearfix::placeholder,
-#movies_sidebar .nav-tabs > li.active > a, 
-#movies_sidebar .nav-tabs > li:hover > a,  
-#zerglayout > div > div > div.zergheadline > a[style], 
-#pb-story .text-editor-viewer .ql-editor, 
-#contentReviews > h2 > a, 
+textarea.rating_textbox-textarea.clearfix::placeholder,
+#movies_sidebar .nav-tabs > li.active > a,
+#movies_sidebar .nav-tabs > li:hover > a,
+#zerglayout > div > div > div.zergheadline > a[style],
+#pb-story .text-editor-viewer .ql-editor,
+#contentReviews > h2 > a,
 #scorePanel span.subtle,
-#homepage-spotlight1 h3, 
+#homepage-spotlight1 h3,
 #homepage-spotlight2 h3,
 #seasonList .seasonItem a,
 #movies_sidebar .tab-content h3,
-.panel-rt.panel .panel-heading, 
-.panel-rt .panel-heading, 
-.panel-rt > .panel-heading, 
+.panel-rt.panel .panel-heading,
+.panel-rt .panel-heading,
+.panel-rt > .panel-heading,
 .videoSection .panel-heading,
 body,
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,  
-input, button, select, textarea  
-a.articleLink,
-p, li, .form-control,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+input,
+button,
+select,
+textarea a.articleLink,
+textarea,
+p,
+li,
+.percentage.tiny,
+.form-control,
 a.unstyled,
 .panel-heading a,
 .btn-secondary-rt,
@@ -267,18 +210,19 @@ a.unstyled,
 .navbar-rt .navbar-nav .menuHeader .dropdown-menu a,
 .navbar-rt .navbar-nav .menuHeader .dropdown-menu .subnav h2.title,
 .black,
-.trendingBar li a, 
+.trendingBar li a,
 .trendingBar li a:before,
-.Tepisodes h3, .Tepisodes .epis-info h4,
+.Tepisodes h3,
+.Tepisodes .epis-info h4,
 .Tepisodes .epis-main .epis-meter,
 .movie_list a,
 .line,
 .navbar.navbar-rt #menu .menuHeader:hover,
 .VideosCarousel__video-title,
-.FullscreenSearch--desktop .FullscreenSearch__result-text-line-1, 
+.FullscreenSearch--desktop .FullscreenSearch__result-text-line-1,
 .FullscreenSearch--desktop .FullscreenSearch__result-text-line-2,
 .mb-movies.list-view .mb-movie .movie_info .consensus .consensus-text,
-.headline.headlineItem .bannerCaption .panel-body .title, 
+.headline.headlineItem .bannerCaption .panel-body .title,
 .headline .headlineItem .bannerCaption .panel-body .title,
 .countdown-index span,
 .userDropdown.dropdown .dropdown-menu li.header-top-bar-item a,
@@ -288,55 +232,50 @@ a.unstyled,
 .news-article-title,
 .amazoninstant,
 .btn-primary,
-.critics-filter-link
-  {
+.critics-filter-link,
+.dynamic-text-list li a,
+.mop-audience-reviews__review--name,
+.score_details__big-text {
     color: #ccc !important;
-  }     
+}
 
 /** #FA320A **/
-  #dvd-affliate-links a,
+#dvd-affliate-links a,
 #heroImageContainer .title,
 #heroImageContainer span.h3.year,
 .title em,
 .cfpItem p,
-.redDot li a i
-  {
+.redDot li a i {
     color: #FA320A !important;
-  }
-
-/** #343434**/
-  span.tMeterScore,
-.navbar-rt .navbar-nav .menuHeader .dropdown-menu .subnav table.movie_list .tMeterScore
-  {
-    color: #888 !important;
-  }
-
-/** #2f8cb7 **/
-  .freshPicks li a,
-a, .a
-  {
-    color: #2f8cb7;
-  }
-
-/***** Misc ****************************************************/
-  img[src="https://d2a5cgar23scu2.cloudfront.net/static/images/redesign/actor.default.tmb.gif"],
-img[src="https://staticv2-4.rottentomatoes.com/static/images/redesign/user.none.tmb.jpg"]
-  {
-    filter: invert(90%);
-  }
-
-  #heroImageContainer .title
-  {
-    text-shadow: 2px 2px 2px #000;
-  }
 }
 
-/***** Fixes comments ******************************************/
-@-moz-document regexp("(?=.*base=default&f=rottentomatoes).*")
-{
+/** #343434**/
+span.tMeterScore,
+.navbar-rt .navbar-nav .menuHeader .dropdown-menu .subnav table.movie_list .tMeterScore {
+    color: #888 !important;
+}
 
-  .post-content .post-message p
-  {
+/** #2f8cb7 **/
+.freshPicks li a,
+a,
+.a {
+    color: #2f8cb7;
+}
+
+/***** Misc ****************************************************/
+img[src="https://d2a5cgar23scu2.cloudfront.net/static/images/redesign/actor.default.tmb.gif"],
+img[src="https://staticv2-4.rottentomatoes.com/static/images/redesign/user.none.tmb.jpg"] {
+    filter: invert(90%);
+}
+
+#heroImageContainer .title {
+    text-shadow: 2px 2px 2px #000;
+}
+}
+
+@-moz-document regexp("(?=.*base=default&f=rottentomatoes).*") {
+/***** Fixes comments ******************************************/
+.post-content .post-message p {
     color: #ccc !important;
-  }
+}
 }
