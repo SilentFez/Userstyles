@@ -8,6 +8,7 @@ Hosting them here as the userstyles webpage seems to be having lots of trouble.
 * IMDb Nightmode
 * Rottentomatoes Nightmode
 * SoundCloud Nightmode
+* GolfTV Responsive Player
 
 ## Installation
 
