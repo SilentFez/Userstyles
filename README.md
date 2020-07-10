@@ -1,6 +1,6 @@
 # Userstyles
 
-Userstyles for sites I have made throughout the years.
+Custom userstyles for different sites.
 
 Hosting them here as the userstyles webpage seems to be having lots of trouble.
 
