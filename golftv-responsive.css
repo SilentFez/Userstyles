@@ -1,0 +1,24 @@
+@-moz-document domain("golf.tv") {
+/*
+* Author        :  SilentFez
+* URL           :  https://github.com/SilentFez/Userstyles
+* Title         :  golftv - responsive
+* Version       :  0.0.1
+*/	
+h1.title {
+    font-size: 20px !important;
+    display: block;
+}
+
+a.close {right: 155px;}
+
+.title-parent-container {
+    margin: 0 !important;
+    padding-left: 155px;
+}
+
+diva-player {
+    max-height: 88% !important;
+    max-width: 88% !important;
+}
+}
