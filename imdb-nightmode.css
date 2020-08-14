@@ -535,7 +535,7 @@ table.item td.help
 /***** font ******************************************/
 
 /** #ccc **/
-  body,
+body,
 input, 
 input[type="password"], 
 input[type="search"], 
@@ -607,8 +607,8 @@ ul.quicklinks li.subnav_selected a:visited,
 .list-actions-cbox .message,
 .navbar-suggestionsearch__search-result .navbar-suggestionsearch__video-item--single .navbar-suggestionsearch__video-details,
 .imdb-user-review .title,
-.a-checkbox label, .a-radio label
-  {
+.a-checkbox label, .a-radio label,
+.ipc-html-content--base {
     color: #ccc;
   }
 
